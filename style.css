@@ -1,0 +1,138 @@
+html{
+    
+    background: #f7f7f7;
+}
+
+body{
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Barlow', sans-serif;
+}
+
+header, footer{
+    background: #333a40;
+    color:white;
+    
+    
+}
+
+ul{
+      margin: 0;
+      padding: 0;
+  
+}
+
+li{
+    list-style: none;
+    line-height: 30px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: #0e69e9;
+    
+}
+ header li{
+    display: inline;
+    
+}
+
+header h1, nav{
+    
+    display: inline-block;
+}
+
+main{
+    width: 680px;
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+aside{
+    
+   width: 270px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+
+.product{
+   box-sizing:border-box;
+    border: 1px solid grey;
+    width: 210px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    
+ }
+
+img{
+    max-width: 100% ;
+}
+
+.button{
+    
+    padding: 10px;
+    display: inline-block;
+}
+
+.button:last-of-type{
+    
+    background: #0e69e9;
+    color: white;
+    
+}
+
+/*Product Detail page*/
+
+.product-detail{
+    width: 660px;
+    
+}
+.product-detail img {
+    max-width: 50%;
+    float: left;
+}
+
+
+
+/*
+
+1. Target. you can target specific areas of the HTML by adding the tag name like Header, body, hMTL, Footer, IMG or a like. you can target specific areas nested inside any of the main tags of the HTML for example header h1{} and also you can targer multiple areas by adding a comma follow by the next tag ej: header h1, nav o main areas ej body, html{}.
+
+2. Display: inline, inline block block
+
+    A. display inline: will display the object in one line of the document 
+    B. inline block: will display the document in one line and but will also let you control the width and height. 
+    C. Block: it add a line breaf after the element so the elements wont sit next to each other. 
+    D. When using inline elemnents we cant add margin or padding to the left and right btu we can do it to the top a bottom
+
+3. styling lines: target li{} :
+
+    A. List-style: none, inside, url, circle, squre amoing others
+    B. line-height: space btw each line. 
+
+4. pseudo classes: you can do different actions wit the pseudo classes, like changing the color when the mouse moves over, changing the color when you already click the link and so forth. to add a speudo class you need to write
+
+a + : + the name of the claass + {}.
+    
+    A. we can select an specific tag and number of type of class, to change or add properties:
+
+ej: p:first-of-type: will select all the first of an type. see exampple with p's on css. you can also selcet the last of type or target an specific element by using 
+NTH-OF-TYPE(X), where X is going to be the target element of the specific list or content.
+
+5. Float: Will set an element to float on the side of the elements inside the objct. 
+
+A.*** be aware float does not account for heigth only for wide. so in case you come across the problem of the next element coming towards the float, you can use overflow:auto. look for clearfix.
+
+b. Clear, will clear the element to not float on the right floating element, left or both. 
+
+*/

@@ -4,13 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
-    <link rel="stylesheet" href="">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+    
+    
 </head>
 
 <body>
  
 <!-- header-->
-  <header>
+  <header style= "background: #333a40; color: white;">
       <h1>Tech Store</h1>
       <nav>
       <ul>
@@ -18,7 +22,10 @@
          <li><a href="ProductInfo.html">Shop</a></li>
          <li><a href="contact.html">Contact us</a></li>
       </ul>
-      </nav>    
+      </nav>  
+      <input type="search" placeholder="search...">
+      
+      
  </header>
   
 <!-- sidebar -->
@@ -127,16 +134,12 @@
     <div>
         <input type="submit">
         <input type="reset">
+<!--<button type="submit">Submit</button>-->
+</div> 
+ </form>
 
-    <!--<button type="submit">Submit</button>-->
-        
-    </div> 
-                      
-
-                
-                       
-   </form>
-  
+<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+src="https://www.google.com/maps/embed/v1/place?q=place_id:EjdBdi4gQW1hcG9sYSwgUHJvdmluY2lhIGRlIFB1bnRhcmVuYXMsIEphY8OzLCBDb3N0YSBSaWNhIi4qLAoUChIJo_UEu0PHoY8Rlf_mHvGnX4sSFAoSCYMMYblqx6GPEfbdj6X_fvMb&key= AIzaSyAVB1etYKJK4NcH1OeulgQbB2SZgw3jN2Y"></iframe>
          
       
    </main>
@@ -151,7 +154,7 @@
       </nav>
    </footer>   
        
-     
+    
    
    
    
@@ -184,5 +187,17 @@
 7. <datalist> data list is used to have a dropdown but also to be able to write and search what we are looking. this is used for larger lists. the way to buld it: after the <input type="text"> you need to add the <datalist> nested inside you add <option value="x") the value inside is the value you will see. you have to link this list to the input, to do it you <datalist id="x") and on the input you have to wrihte list=" id of the data list", so the input know to which list it needs to refer. 
 
 8. <submit> or <button type="submit">: you can use either or but the main difference is that <submit> by default has the submit text inside, whereas on <button> you have the control of the message inside.
+
+9.<different inputs 
+       
+       <input type="numer">
+        <input type="password">
+        <input type="date">
+        <input type="color">  
+        <input type="range" min="" max="max" value="1">
+        For the range is good for javascript like music player, when we wto sett the volume on a music player from when the user drags up and or down.
+        <search>
+        
+10. <iframe> ; it is used to embed other websites inside of a website. it will only allow add webiste that allow this feature like wikipedia and youtube among other. Google for example doesnt allow it. there some attributes that we can use inside the iframe for edit. like border, full screen video and such. if you add any text inside the tags will use for disability reading.
 
 -->
