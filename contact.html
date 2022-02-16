@@ -16,7 +16,7 @@
 <!-- header-->
   <header style= "background: #333a40; color: white;">
       <h1>Tech Store</h1>
-      <nav>
+      <nav class="navi">
       <ul>
          <li><a href="index.html" >Home</a></li>
          <li><a href="ProductInfo.html">Shop</a></li>
@@ -63,16 +63,16 @@
        
    <form>
       
-    <div>
-    <label for="name">  Name: </label> <input type="text" placeholder="Enter your name" id="name" name="name">  
+    <div class="inline">
+    <label for="name" >  Name: </label> <input type="text" placeholder="Enter your name" id="name" name="name">  
     </div>
        
-    <div>
-    <label for="email"> Email: </label><input type="email" placeholder="Enter your Email" id="email" name="email">   
+    <div class="inline">
+    <label for="email" > Email: </label><input type="email" placeholder="Enter your Email" id="email" name="email">   
     </div>
     
-     <div>
-      <label id="text">Message:</label> <textarea cols="30" rows="5" id="text" name="text"></textarea>   
+     <div id="text" class="inline">
+      <label >Message:</label> <textarea cols="30" rows="5" id="text" name="text"></textarea>   
      </div>
 <!--
      
@@ -98,7 +98,7 @@
      </div>
 -->
      
-     <div>
+     <div class="inline">
          <label for="subject">Subject</label>
          <input type="text" list="subjects" id="subject" placeholder="Enter your subject">
          <datalist id="subjects">

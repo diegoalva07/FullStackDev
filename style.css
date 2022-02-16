@@ -5,7 +5,7 @@ html{
 
 body{
     background: white;
-    max-width: 1000px;
+    max-width: 80vm;
     margin: 0 auto;
     font-family: 'Barlow', sans-serif;
 }
@@ -13,9 +13,12 @@ body{
 header, footer{
     background: #333a40;
     color:white;
+    height: 100px;
     
     
 }
+
+
 
 ul{
       margin: 0;
@@ -26,6 +29,7 @@ ul{
 li{
     list-style: none;
     line-height: 30px;
+    
     
 }
 
@@ -48,16 +52,23 @@ header h1, nav{
     display: inline-block;
 }
 
+header h1{
+    width: 68%;
+}
+
 main{
-    width: 680px;
+/* target/context =  result: this is how we convert a pixel size to a fluid size  */
+/* 680/1000px = 0.68 *100 = 68%*/
+    
+    width: 68%;
     display: inline-block;
-    padding: 10px;
+    padding: 20px 10px;
     
 }
 
 aside{
     
-   width: 270px;
+   width: 27%;
     display: inline-block;
     vertical-align: top;
     padding: 10px;
@@ -67,10 +78,11 @@ aside{
 .product{
    box-sizing:border-box;
     border: 1px solid grey;
-    width: 210px;
+    width: 30%;
     margin: 5px;
     padding: 5px;
     display: inline-block;
+    text-align: center;
     
  }
 
@@ -100,6 +112,49 @@ img{
 .product-detail img {
     max-width: 50%;
     float: left;
+}
+
+/*Contact us */
+
+form{
+    padding: 10px;
+    margin: 10px 0;
+    width: 600px;
+}
+
+form > div{
+    margin: 10px 0;
+}
+
+.inline label{
+    display: inline-block;
+    width: 100px;
+}
+
+input[type="text"], input[type="email"], textarea{
+    padding: 10px;
+    width: 400px;
+    
+    
+}
+
+/*table*/
+
+
+table, th, td{
+    
+    
+    padding: 5px;
+    width: 400px;
+    text-align: left;
+    margin: 5px;
+
+    
+}
+
+table caption{
+    margin: 10px;
+    border-bottom: 1px solid;
 }
 
 
@@ -135,4 +190,64 @@ A.*** be aware float does not account for heigth only for wide. so in case you c
 
 b. Clear, will clear the element to not float on the right floating element, left or both. 
 
+6.  Property: to position elmeents, there are 5:
+
+    A. Static: the elements will be palce where they wold normally be in the flow or the documents. This is the default setting.
+
+
+    B. Relative: Plaes the elements where they would normally be, but takes in to account top, bottom, left and right to offset the elements. and it doesnt affect any of the surranding elements.
+
+    C. Absolute: it take the elements out of the normal flow of the document, it will not be place in the next available space, there is no space create it for it. It will be reference to the top of the web, or to be more precice to the HTML container elements. To reference to another parent element, we will need to set the position of such element ot be relative.  
+
+    D. Fixed: It will reference to the html. but will mantian his position while scrolling down the page. To reference to another parent element, we will need to set the position of such element ot be relative. Fixed position will not occupy any space in the body, so the next element(eg: an image) will be behind the fixed element
+
+
+    E. Sticky:The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements. It will make the object stay in place,sticky position occupies the space, so the next element will not be hidden behind it.
+
+7. child combinator (>):The element>element selector is used to select elements with a specific parent.
+
+8. Objex[type="X"]: selector is used to select elements with an attribute value containing a specified word, or type.
+
 */
+
+
+/*RESPONSIVE WEBSITE*/
+
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+In every document that you work, you want to use the meta tag as above. you want to set up the content to "width+device-widht". we dont use a fixed number because there are too many different screen sizes and we need our webiste to fit them all, inside of the "" after width we want to add a ',' and use the inital-scale=1.0, so the device doesnt zoom out the webiste to see all the objects. 
+
+>*/
+
+
+/*relative or scalable units*/
+
+/*When working with responsive websites, you dont really want to work with PX units (its Fixed), you want to use more flexible units(%. VW, VH):
+
+1. Using % the page wil shrink or strech to the X% of the available space, in can be use with main tags and nested tags.
+
+
+
+2. Viewport : is the visible are of the user of the screen
+
+    2.1 VW="View width"
+    2.2 VH="View height"
+
+3. EM and REM:
+
+    3.1 em realtes to the parent section .The em unit allows setting the font size of an element relative to the font size of its parent. When the size of the parent element changes, the size of the child changes automatically.
+
+        3.1.1 When em units are used on font-size property, the size is relative to the font-size of the parent. When used on other properties, it’s relative to the font-size of that element itself. Here, only the first declaration takes the reference of the parent.
+
+    3.2 rem is based upon the font-size value of the root element, which is the <html> element. And if the <html> element doesn’t have a specified font-size, the browser default value of 16px is used. So here only the value of the root is considered, and there is no relation with a parent element.
+
+        3.2.1Unlike em, here size is relative for all declarations, not only first. Let’s understand this with our previous example.
+
+    4. Media queries:
+
+
+
+*/
+
+
+
