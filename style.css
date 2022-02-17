@@ -5,17 +5,22 @@ html{
 
 body{
     background: white;
-    max-width: 80vm;
     margin: 0 auto;
     font-family: 'Barlow', sans-serif;
+    text-align: center;
 }
 
 header, footer{
     background: #333a40;
     color:white;
-    height: 100px;
+    padding: 20px 10px;
     
     
+}
+
+input[type="search"]{
+    
+    width: 100%;
 }
 
 
@@ -53,36 +58,19 @@ header h1, nav{
 }
 
 header h1{
-    width: 68%;
+/*    width: 70%;*/
+    width: 100%;
 }
-
-main{
-/* target/context =  result: this is how we convert a pixel size to a fluid size  */
-/* 680/1000px = 0.68 *100 = 68%*/
-    
-    width: 68%;
-    display: inline-block;
-    padding: 20px 10px;
-    
-}
-
-aside{
-    
-   width: 27%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px;
-}
-
 
 .product{
    box-sizing:border-box;
     border: 1px solid grey;
-    width: 30%;
+/*    width: 30%;*/
     margin: 5px;
     padding: 5px;
-    display: inline-block;
+/*    display: inline-block;*/
     text-align: center;
+    width: 98%;
     
  }
 
@@ -156,6 +144,78 @@ table caption{
     margin: 10px;
     border-bottom: 1px solid;
 }
+
+@media (min-width: 800px)
+{
+    input[type="search"]{
+        width:40%;
+        margin-left: 2em;
+    }
+    
+    .product{
+    width: 48%;
+   display: inline-block;
+    
+ }
+    
+}
+
+
+/* target/context =  result: this is how we convert a pixel size to a fluid size  */
+/* 680/1000px = 0.68 *100 = 68%*/
+
+@media (min-width: 1000px){
+    
+    body{
+        text-align: left;
+    }
+    
+     header h1{
+    width: 70%;
+
+}
+    
+main{
+
+    width: 68%;
+    display: inline-block;
+    padding: 20px 10px;
+}
+    
+
+    
+    input[type="search"]{
+    
+    width: 10%;
+}
+
+aside{
+    
+    width: 27%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+    
+ 
+      
+}
+
+@media (min-width: 1200px) {
+    
+    body{
+        max-width: 80vm;
+    }
+    
+    .product{
+        width: 30%;
+    }
+    
+    
+    
+}
+
+ 
 
 
 
@@ -243,11 +303,25 @@ In every document that you work, you want to use the meta tag as above. you want
 
         3.2.1Unlike em, here size is relative for all declarations, not only first. Let’s understand this with our previous example.
 
-    4. Media queries:
+    4. Media queries: allow us to change layout based on the users device size, orientation or resolution amoung others. ie: we can have css rules for screens over 600 pixels, on 600 wide===
 
+    1. to be able to call a media queris you write
+@media () {}. we can use AND to mix 1 or 2 more queries ei:           @media (xxxx) and (xxxx){}
 
+    2. when the styling change accurs it is call the Breakpoints.
+
+    3. Is a good idea to start with the browser really narrow, and then apply general CSS, then strech the browser wider and only apply a media query to change layouts when th desing begins to look streched or not quite right. 
+
+    4. We used AND to mix media queries. you can also use not and only logical operators to make more complex media queries.
 
 */
 
 
+/*Styling for small screens */
+
+ /*   
+
+A good starting point is to often make the content for width and also centered.
+
+*/
 
