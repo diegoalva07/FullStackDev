@@ -132,7 +132,7 @@ input[type="text"], input[type="email"], textarea{
 table, th, td{
     
     
-    padding: 5px;
+    padding: 10px;
     width: 400px;
     text-align: left;
     margin: 5px;
@@ -301,7 +301,7 @@ In every document that you work, you want to use the meta tag as above. you want
 
     3.2 rem is based upon the font-size value of the root element, which is the <html> element. And if the <html> element doesn’t have a specified font-size, the browser default value of 16px is used. So here only the value of the root is considered, and there is no relation with a parent element.
 
-        3.2.1Unlike em, here size is relative for all declarations, not only first. Let’s understand this with our previous example.
+        3.2.1Unlike em, here size is relative for all declarations, not only first. 
 
     4. Media queries: allow us to change layout based on the users device size, orientation or resolution amoung others. ie: we can have css rules for screens over 600 pixels, on 600 wide===
 
