@@ -1,138 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
- 
-<!-- header-->
-  <header>
-      <h1>Tech Store</h1>
-      <nav class="navi">
-      <ul>
-         <li><a href="index.html" >Home</a></li>
-         <li><a href="ProductInfo.html">Shop</a></li>
-         <li><a href="contact.html">Contact us</a></li>
-      </ul>
-      </nav>
-       <input type="search" placeholder="search...">    
- </header>
-  
-<!-- sidebar -->
-  <aside>
-   <h2>Shop by:</h2>
-   <section>
-   <h3>Category</h3>
-  <hr>
-   <ul>
-      <li>All items</li>
-       <li>Cameras</li>
-       <li>Laptops</li>
-       <li>Phones</li>
-       <li>Accessories</li>
-       <li>Other</li>
-   </ul>
-   </section>
-    
-      <section>
-   <h3>Price <span>($)</span></h3>
-    <hr>
-     <ul>
-       <li>1-9</li>
-       <li>10-29</li>
-       <li>30-59</li>
-       <li>60-99</li>
-       <li>100+</li>
-     </ul>
-     </section>
-   </aside>
-   
-<!-- main  -->
-   <main>
-   <h2>All items:</h2> 
-    
-     <div class="product">
-     <a href="ProductInfo.html">
-      <img src="images/controller.jpg" alt="Game Controller picture"></a>
-      <h4> <a href="ProductInfo.html" > Game Controler</a></h4>
-       <p>$79.99</p>
-       <p><em>Awesome</em> great conroler <br>for Xbox!</p>
-       <a href="ProductInfo.html" class="button">MoreInfo</a>
-       <a href="#" class="button">Add to cart</a>
-     </div>
-    <div class="product">
-      <img src="images/headphones.jpg" alt="Headphones picture">
-       <a href="ProductInfo.html"> <h4>White headphones</h4></a>
-       <p>$59.99</p>
-       <p><em>Awesome</em> Great White <br>for headphones!</p>
-       <a href="ProductInfo.html" class="button">MoreInfo</a>
-       <a href="#" class="button">Add to cart</a>
-     </div>
-      
-    <div class="product"> 
-      <img src="images/camera.jpg" alt="Camera">
-       <a href="ProductInfo.html"> <h4>camera</h4></a>
-       <p>$129.99</p>
-       <p><em>Awesome</em> Great microphone <br>Great sound!</p>
-       <a href="ProductInfo.html" class="button">MoreInfo</a>
-       <a href="#" class="button">Add to cart</a>
-     </div>
-     <div class="product">
-     <img src="images/microphone.jpg" alt="Microphone">
-       <a href="ProductInfo.html"> <h4>Microphone</h4></a>
-       <p>$79.99</p>
-       <p><em>Awesome</em> Great camera <br>awesome resolution!</p>
-       <a href="ProductInfo.html" class="button">MoreInfo</a>
-       <a href="#" class="button">Add to cart</a>
-     </div>
-          
-    <div class="product">
-       <img src="images/cables.jpg" alt="Cables">
-       <a href="ProductInfo.html"> <h4>Cables</h4></a>
-       <p>$29.99</p>
-       <p><em>Awesome</em> great Cables <br>for sound!</p>
-       <a href="ProductInfo.html" class="button">MoreInfo</a>
-       <a href="#" class="button">Add to cart</a> 
-     </div>
-      
-     <div class="product">
-      <img src="images/lenses.jpg" alt="Lenses">
-       <a href="ProductInfo.html"> <h4>Lenses</h4></a>
-       <p>$500.99</p>
-       <p><em>Awesome</em> great Lenses <br>(for rebel3 &lt; 2017)</p>
-       <a href="ProductInfo.html" class="button">MoreInfo</a>
-       <a href="#" class="button"> Add to cart</a>
-     </div>
-      
-       
-      
-      
-   </main>
-<!--   footer -->
-   <footer> 
-       <nav >
-          <ul>
-        <li><a href="index.html" >Home</a></li>
-         <li><a href="ProductInfo.html">Shop</a></li>
-         <li><a href="contact.html">Contact us</a></li>
-      </ul>
-      </nav>
-   </footer>   
-       
-     
-   
-   
-   
-    <script src=""></script>
-</body>
-</html>
 
+    <!-- header-->
+    <header>
+        <h1>Tech Store</h1>
+        <nav class="navi">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ProductInfo.html">Shop</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <input type="search" placeholder="search...">
+    </header>
+
+    <!-- sidebar -->
+    <aside>
+        <h2>Shop by:</h2>
+        <section>
+            <h3>Category</h3>
+            <hr>
+            <ul>
+                <li>All items</li>
+                <li>Cameras</li>
+                <li>Laptops</li>
+                <li>Phones</li>
+                <li>Accessories</li>
+                <li>Other</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Price <span>($)</span></h3>
+            <hr>
+            <ul>
+                <li>1-9</li>
+                <li>10-29</li>
+                <li>30-59</li>
+                <li>60-99</li>
+                <li>100+</li>
+            </ul>
+        </section>
+    </aside>
+<!-- main  -->
+   <main id="container">
+       <h2>All items:</h2>
+
+       <div class="product">
+           <a href="ProductInfo.html">
+               <img src="images/controller.jpg" alt="Game Controller picture"></a>
+           <h4> <a href="ProductInfo.html"> Game Controler</a></h4>
+           <p>$79.99</p>
+           <p><em>Awesome</em> great conroler <br>for Xbox!</p>
+           <a href="ProductInfo.html" class="button">MoreInfo</a>
+           <a href="#" class="button">Add to cart</a>
+       </div>
+       <div class="product">
+           <img src="images/headphones.jpg" alt="Headphones picture">
+           <a href="ProductInfo.html">
+               <h4>White headphones</h4>
+           </a>
+           <p>$59.99</p>
+           <p><em>Awesome</em> Great White <br>for headphones!</p>
+           <a href="ProductInfo.html" class="button">MoreInfo</a>
+           <a href="#" class="button">Add to cart</a>
+       </div>
+
+       <div class="product">
+           <img src="images/camera.jpg" alt="Camera">
+           <a href="ProductInfo.html">
+               <h4>camera</h4>
+           </a>
+           <p>$129.99</p>
+           <p><em>Awesome</em> Great microphone <br>Great sound!</p>
+           <a href="ProductInfo.html" class="button">MoreInfo</a>
+           <a href="#" class="button">Add to cart</a>
+       </div>
+       <div class="product">
+           <img src="images/microphone.jpg" alt="Microphone">
+           <a href="ProductInfo.html">
+               <h4>Microphone</h4>
+           </a>
+           <p>$79.99</p>
+           <p><em>Awesome</em> Great camera <br>awesome resolution!</p>
+           <a href="ProductInfo.html" class="button">MoreInfo</a>
+           <a href="#" class="button">Add to cart</a>
+       </div>
+
+       <div class="product">
+           <img src="images/cables.jpg" alt="Cables">
+           <a href="ProductInfo.html">
+               <h4>Cables</h4>
+           </a>
+           <p>$29.99</p>
+           <p><em>Awesome</em> great Cables <br>for sound!</p>
+           <a href="ProductInfo.html" class="button">MoreInfo</a>
+           <a href="#" class="button">Add to cart</a>
+       </div>
+
+       <div class="product">
+           <img src="images/lenses.jpg" alt="Lenses">
+           <a href="ProductInfo.html">
+               <h4>Lenses</h4>
+           </a>
+           <p>$500.99</p>
+           <p><em>Awesome</em> great Lenses <br>(for rebel3 &lt; 2017)</p>
+           <a href="ProductInfo.html" class="button">MoreInfo</a>
+           <a href="#" class="button"> Add to cart</a>
+       </div>
+
+
+
+
+   </main>
+   <!--   footer -->
+   <footer>
+       <nav>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="ProductInfo.html">Shop</a></li>
+               <li><a href="contact.html">Contact us</a></li>
+           </ul>
+       </nav>
+   </footer>
+
+
+
+
+
+   <script src=""></script>
+   </body>
+
+   </html>
 
 <!--
    <strong> to make a text bold
